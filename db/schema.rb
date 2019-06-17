@@ -26,8 +26,8 @@ ActiveRecord::Schema.define(version: 2019_06_17_022639) do
     t.text "description"
     t.string "original_title"
     t.string "movie_db_id"
-    t.boolean "in_greek_theatres"
-    t.string "poster_path"
+    t.string "poster"
+    t.boolean "in_theatres"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
