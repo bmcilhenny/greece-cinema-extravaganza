@@ -28,7 +28,6 @@ create_table "movies", force: :cascade do |t|
     t.string "original_title"
     t.string "movie_db_id"
     t.string "poster"
-    t.boolean "in_theatres"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
