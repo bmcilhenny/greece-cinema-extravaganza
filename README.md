@@ -15,5 +15,6 @@ To update movies in database run `rake db:update_movies_in_greek_theatres`. <br 
 </br>
 
 Database is setup in a way to easily associate cast as well as crew members to movies by using generic Person model like Movie db's API. <br />
+<br />
 To change country simply change `line 9` to the 2 letter ISO code for that country, `country = ISO_CODE` </br>
 
