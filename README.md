@@ -18,3 +18,39 @@ Database is setup in a way to easily associate cast as well as crew members to m
 <br />
 To change country simply change `line 9` to the 2 letter ISO code for that country, `country = ISO_CODE` </br>
 
+
+## DDL
+
+create_table "movies", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.string "original_title"
+    t.string "movie_db_id"
+    t.string "poster"
+    t.boolean "in_theatres"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+create_table "crews", force: :cascade do |t|
+    t.integer "movie_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "people", force: :cascade do |t|
+    t.string "name"
+    t.string "imdb_url"
+    t.integer "person_db_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "person_crews", force: :cascade do |t|
+    t.integer "person_id", null: false
+    t.integer "crew_id", null: false
+    t.string "department"
+    t.string "job"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
