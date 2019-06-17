@@ -62,4 +62,4 @@ CREATE TABLE person_crews (
 1. use command rails console
 2. select a movie, then use .get_crew('director). This will grab all associated directors with that movie
 
-![Image of a movie's directors](https://octodex.github.com/images/yaktocat.png)
+![Image of a movie's directors](https://ibb.co/F5ZMyFy)
