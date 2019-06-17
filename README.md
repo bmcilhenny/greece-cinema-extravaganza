@@ -1,6 +1,7 @@
 # README
 
 Most stable version of Ruby, Rails, Postgres must be downloaded. <br />
+Postgres server must be running.
 To build clone down repo. <br />
 Run `bundle`. <br />
 Run `rake db:create && rake db:migrate`. <br />
