@@ -61,6 +61,7 @@ CREATE TABLE person_crews (
 
 1. use command `rails console`
 2. Query for a movie, e.g. `Movie.last`.
-2. Use .get_crew('director'). This will grab all associated persons with that movie who have the job name 'Director'.
+3. Use .get_crew('director', 'directing') instance method. This will grab all associated persons with that movie who have the job name 'Director' and are a part of the 'directing department. Wrote this for more flexibility when database has more than just crew members who are directors. Can use this to get script writers from script department, lighting etc.
+4. Or, simply use .directors to grab people with the job of 'director' and the department of 'directing'.
 
 ![Image of a movie's directors](https://i.ibb.co/GJngXs7/Screen-Shot-2019-06-17-at-2-48-49-PM.png)
