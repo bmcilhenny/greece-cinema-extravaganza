@@ -21,6 +21,7 @@ To change country simply change `line 9` to the 2 letter ISO code for that count
 
 ## DDL
 
+```
 create_table "movies", force: :cascade do |t|
     t.string "title"
     t.text "description"
@@ -54,3 +55,4 @@ create_table "crews", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+```
