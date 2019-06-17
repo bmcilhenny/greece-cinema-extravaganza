@@ -14,7 +14,7 @@ To update movies in database run `rake db:update_movies_in_greek_theatres`. <br 
 *It will remove movies from the database if they're no longer in theatres as well as any director(s) associated with it.* <br />
 </br>
 
-Database is setup in a way to easily associate cast as well as crew members to movies by using generic Person model like Movie db's API. <br />
+Database is setup in a way to easily associate cast as well as crew members to a movie by using generic Person model like Movie db's API. This way a person can be associated with a crew, and in the future, a cast of that same movie. An example: Quentin Tarintino directed as well as starred in Reservoir Dogs, for instance. You'd create one Person for Quentin, then a corresponding person_crews row as well as a person_casts row for his corresponding directing as well as acting role. <br />
 <br />
 To change country simply change `line 9` to the 2 letter ISO code for that country, `country = ISO_CODE` </br>
 
