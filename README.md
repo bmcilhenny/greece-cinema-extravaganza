@@ -27,7 +27,7 @@ CREATE TABLE movies (
     title STRING,
     description TEXT,
     original_tite STRING,
-    movide_db_id INTEGER,
+    movide_db_id STRING UNIQUE,
     poster STRING
 )
 
@@ -40,7 +40,7 @@ CREATE TABLE persons (
     id SERIAL PRIMARY KEY,
     name STRING,
     imdb_url STRING,
-    person_db_id INTEGER
+    person_db_id INTEGER UNIQUE
 )
 
 CREATE TABLE person_crews (
