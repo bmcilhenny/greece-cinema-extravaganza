@@ -27,14 +27,13 @@ ActiveRecord::Schema.define(version: 2019_06_17_022639) do
     t.string "original_title"
     t.string "movie_db_id"
     t.string "poster"
-    t.boolean "in_theatres"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "people", force: :cascade do |t|
     t.string "name"
-    t.string "imdb_id"
+    t.string "imdb_url"
     t.integer "person_db_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
