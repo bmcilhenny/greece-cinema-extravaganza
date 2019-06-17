@@ -6,7 +6,6 @@ class AddMoviesTable < ActiveRecord::Migration[5.2]
       t.string :original_title
       t.string :movie_db_id, :unique => true
       t.string :poster
-      t.boolean :in_theatres
       t.timestamps
     end
   end
