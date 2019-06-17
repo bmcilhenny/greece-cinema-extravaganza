@@ -63,4 +63,4 @@ CREATE TABLE person_crews (
 2. Query for a movie, e.g. `Movie.last`.
 2. Use .get_crew('director'). This will grab all associated persons with that movie who have the job name 'Director'.
 
-![Image of a movie's directors](https://i.ibb.co/8rvpfHf/Screen-Shot-2019-06-17-at-2-38-24-PM.png)
+![Image of a movie's directors](https://i.ibb.co/GJngXs7/Screen-Shot-2019-06-17-at-2-48-49-PM.png)
