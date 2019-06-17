@@ -57,9 +57,10 @@ CREATE TABLE person_crews (
 )
 ```
 
-# How to get Directors
+# How to get a list of a Movie's directors
 
-1. use command rails console
-2. select a movie, then use .get_crew('director'). This will grab all associated persons with that movie who have the job name 'Director'.
+1. use command `rails console`
+2. Query for a movie, e.g. `Movie.last`.
+2. Use .get_crew('director'). This will grab all associated persons with that movie who have the job name 'Director'.
 
 ![Image of a movie's directors](https://i.ibb.co/8rvpfHf/Screen-Shot-2019-06-17-at-2-38-24-PM.png)
