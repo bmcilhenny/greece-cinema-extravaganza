@@ -46,3 +46,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'rest-client'
 gem 'figaro'
+gem 'parallel'
+gem 'ruby-progressbar'

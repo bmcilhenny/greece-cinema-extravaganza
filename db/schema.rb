@@ -27,23 +27,24 @@ ActiveRecord::Schema.define(version: 2019_06_17_022639) do
     t.string "original_title"
     t.string "movie_db_id"
     t.boolean "in_greek_theatres"
+    t.string "poster_path"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "persons", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
+  create_table "people", force: :cascade do |t|
+    t.string "name"
     t.string "imdb_id"
+    t.integer "person_db_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "persons_crews", force: :cascade do |t|
+  create_table "person_crews", force: :cascade do |t|
     t.integer "person_id", null: false
     t.integer "crew_id", null: false
     t.string "department"
-    t.string "position"
+    t.string "job"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
